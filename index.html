@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Statly: a calm health dashboard for Android</title>
-<meta name="description" content="Steps, sleep and heart from your watch, with badges and streaks. No AI coach. No account. Your health data stays on your phone. Coming soon to Android.">
+<title>Statly: step counter and sleep estimate for Android, no watch needed</title>
+<meta name="description" content="Statly counts your steps and estimates your sleep with your phone. Streaks, badges and widgets. No watch, no other app, no account. Coming soon to Android.">
 <link rel="canonical" href="https://ahaariyan.github.io/staly_health_app_landing_page/">
 <meta name="theme-color" content="#D8EADF">
 <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
@@ -12,20 +12,20 @@
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Statly">
-<meta property="og:title" content="Statly: your health, calm and clear">
-<meta property="og:description" content="Steps, sleep and heart from your watch, with badges and streaks. No AI coach. No account.">
+<meta property="og:title" content="Statly: your steps, calm and clear">
+<meta property="og:description" content="Statly counts your steps and estimates your sleep with your phone. Streaks, badges and widgets. No watch, no other app, no account.">
 <meta property="og:url" content="https://ahaariyan.github.io/staly_health_app_landing_page/">
-<meta property="og:image" content="https://ahaariyan.github.io/staly_health_app_landing_page/assets/og-statly.jpg">
+<meta property="og:image" content="https://ahaariyan.github.io/staly_health_app_landing_page/assets/og-statly.jpg?v=2">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Statly: your health, calm and clear. The Today screen with steps, sleep and heart.">
+<meta property="og:image:alt" content="Statly: your steps, calm and clear. The Today screen with a step ring, a streak and last night's estimated sleep.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Statly: your health, calm and clear">
-<meta name="twitter:description" content="Steps, sleep and heart from your watch, with badges and streaks. No AI coach. No account.">
-<meta name="twitter:image" content="https://ahaariyan.github.io/staly_health_app_landing_page/assets/og-statly.jpg">
-<meta name="twitter:image:alt" content="Statly: your health, calm and clear. The Today screen with steps, sleep and heart.">
-<link rel="stylesheet" href="styles.css?v=1">
+<meta name="twitter:title" content="Statly: your steps, calm and clear">
+<meta name="twitter:description" content="Statly counts your steps and estimates your sleep with your phone. Streaks, badges and widgets. No watch, no other app, no account.">
+<meta name="twitter:image" content="https://ahaariyan.github.io/staly_health_app_landing_page/assets/og-statly.jpg?v=2">
+<meta name="twitter:image:alt" content="Statly: your steps, calm and clear. The Today screen with a step ring, a streak and last night's estimated sleep.">
+<link rel="stylesheet" href="styles.css?v=2">
 <script src="assets/play.js?v=1" defer></script>
 </head>
 <body>
@@ -36,7 +36,7 @@
   <div class="wrap top-in">
     <a class="brand" href="./"><img src="assets/icon.webp" alt="" width="32" height="32">Statly</a>
     <nav class="nav" aria-label="Sections">
-      <a href="#today">Today</a>
+      <a href="#phone">How it works</a>
       <a href="#badges">Badges</a>
       <a href="#widgets">Widgets</a>
       <a href="#trends">Trends</a>
@@ -56,55 +56,57 @@
     <div class="wrap hero-in">
       <div class="hero-copy">
         <p class="pill"><img src="assets/icon.webp" alt="" width="22" height="22">Statly for Android</p>
-        <h1>Your health,<br><span>calm and clear.</span></h1>
-        <p class="lead">Steps, sleep and heart from your watch, with badges and streaks. No AI coach. No account.</p>
+        <h1>Your steps,<br><span>calm and clear.</span></h1>
+        <p class="lead">Statly counts your steps and estimates your sleep with your phone. Streaks, badges and widgets. No watch, no other app, no account.</p>
         <div class="actions">
           <!-- TODO(play-link): No Play listing yet. When it is live, set PLAY_URL in assets/play.js
                (one line). Every [data-play] button then becomes "Get it on Google Play" and links there.
                To switch without JS, give this <a> an href, remove aria-disabled and change the label. -->
           <a class="btn btn-dark btn-lg" data-play aria-disabled="true"><img src="assets/play-logo.png" alt="" width="18" height="20"><span data-play-label>Coming soon to Google Play</span></a>
-          <a class="btn btn-glass btn-lg" href="#today">See the app</a>
+          <a class="btn btn-glass btn-lg" href="#phone">See how it works</a>
         </div>
         <ul class="trust">
-          <li>No AI coach</li>
+          <li>No watch needed</li>
           <li>No account</li>
           <li>Stays on your phone</li>
           <li>No ads</li>
         </ul>
       </div>
       <div class="hero-art">
-        <div class="phone phone-hero">
-          <img src="assets/today-glass.webp" alt="Statly's Today screen: 7,820 of 10,000 steps with 2,180 to go and a 12-day streak, 7 hours 30 minutes of sleep with stages, resting heart 55 bpm and 42 active minutes." width="732" height="1640" fetchpriority="high">
-        </div>
-        <img class="float f-streak" src="assets/w-streak.webp" alt="" width="314" height="314" aria-hidden="true">
-        <img class="float f-heart" src="assets/w-heart.webp" alt="" width="318" height="318" aria-hidden="true">
-        <div class="float f-badge glass" aria-hidden="true"><span class="medal m-gold">👟</span><div><b>Marathon week</b><small>42 km in 7 days</small></div></div>
+        <figure class="shot">
+          <div class="phone phone-hero">
+            <img src="assets/s-today.webp" alt="A real screenshot of Statly's Today screen: 3,600 of 10,000 steps, 6,400 to go, about a 65-minute walk, a 5-day streak, and last night's sleep of 8 hours 5 minutes, estimated from the phone." width="720" height="1433" fetchpriority="high">
+          </div>
+          <figcaption>Real screenshot</figcaption>
+        </figure>
+        <div class="float f-sleep glass" aria-hidden="true"><span class="medal m-lav">🌙</span><div><b>8h 5m last night</b><small>Estimated from your phone</small></div></div>
+        <div class="float f-badge glass" aria-hidden="true"><span class="medal m-gold">🎯</span><div><b>First goal</b><small>Badge earned</small></div></div>
       </div>
     </div>
   </section>
 
-  <!-- ============ TODAY ============ -->
-  <section class="sec" id="today">
+  <!-- ============ PHONE FIRST ============ -->
+  <section class="sec" id="phone">
     <div class="wrap split">
       <div class="split-copy">
-        <p class="kicker">Today</p>
-        <h2>Your day at a glance.<br><em>No coach, no feed.</em></h2>
-        <p class="body">Open Statly and your day is right there, on one calm screen. Nothing to scroll past, nothing telling you how to feel about it.</p>
+        <p class="kicker">How it works</p>
+        <h2>Your phone is enough.<br><em>Just one permission.</em></h2>
+        <p class="body">Install Statly, allow "Physical activity", and put the phone in your pocket. There is nothing to pair, no other app to install and no account to make.</p>
         <ul class="ticks">
-          <li><b>Steps against your goal,</b> with what's left in plain words: "2,180 to go, about a 20-minute walk."</li>
-          <li><b>Last night's sleep</b> with its stages, so you see the shape of the night, not just a number.</li>
-          <li><b>Resting heart and active minutes,</b> with a small trend line for the week.</li>
-          <li><b>Honest about syncing.</b> If your watch hasn't sent last night's sleep yet, Statly says it's waiting instead of showing a zero.</li>
+          <li><b>Steps against your goal,</b> counted by your phone's motion sensor all day, with what's left in plain words: "6,400 to go, about a 65-minute walk."</li>
+          <li><b>Last night's sleep, estimated:</b> when you went to bed, when you woke and how long you slept, worked out from how still the phone was. Always labelled as an estimate.</li>
+          <li><b>Active minutes</b> from brisk walking, plus <b>estimated distance and calories</b> from your steps.</li>
+          <li><b>Streaks, badges and trends</b> that build up on their own as you walk.</li>
         </ul>
       </div>
       <div class="split-art duo">
         <figure class="shot">
-          <div class="phone"><img src="assets/m1-today.webp" alt="A real screenshot of Statly's Today screen: 6,160 of 10,000 steps, 7 hours 20 minutes of sleep, resting heart 55 bpm." width="720" height="1480" loading="lazy"></div>
+          <div class="phone"><img src="assets/s-welcome.webp" alt="A real screenshot of Statly's welcome screen: your steps, calm and clear. Works right away, stays on your phone, and have a watch? Bring it along." width="720" height="1433" loading="lazy"></div>
           <figcaption>Real screenshot</figcaption>
         </figure>
         <figure class="shot shot-back">
-          <div class="phone"><img src="assets/welcome-glass.webp" alt="Statly's welcome screen: stays on your phone, works with your watch, you choose what to share." width="732" height="1640" loading="lazy"></div>
-          <figcaption>Welcome, design</figcaption>
+          <div class="phone"><img src="assets/s-permission.webp" alt="A real screenshot of Statly's one permission screen: Android calls it Physical activity, and it's all Statly asks for. Your steps, your sleep estimated, only on this phone." width="720" height="1433" loading="lazy"></div>
+          <figcaption>Real screenshot</figcaption>
         </figure>
       </div>
     </div>
@@ -115,24 +117,24 @@
     <div class="wrap split split-rev">
       <div class="split-copy">
         <p class="kicker k-coral">Badges &amp; streaks</p>
-        <h2>The part people miss most,<br><em>brought back.</em></h2>
-        <p class="body">Badges and streaks are what kept a lot of us walking that extra block. Statly brings them back: earned from your own data, kept on your phone, and there whenever you want a small win.</p>
+        <h2>A small win<br><em>every time you walk.</em></h2>
+        <p class="body">Hit your step goal and the streak grows. Badges are earned from your own steps, kept on your phone, and there whenever you want a little push to walk that extra block.</p>
         <div class="streak-card">
-          <span class="streak-n">12</span>
-          <div><b>Day streak</b><small>Your best is 21. Keep going.</small>
-            <span class="dashes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i class="off"></i></span></div>
+          <span class="streak-n">5</span>
+          <div><b>Day streak</b><small>Your best yet. Keep going.</small>
+            <span class="dashes" aria-hidden="true"><i class="off"></i><i></i><i></i><i></i><i></i><i></i><i class="off"></i></span></div>
         </div>
-        <ul class="medals" aria-label="Example badges">
-          <li><span class="medal m-gold" aria-hidden="true">👟</span><b>Marathon week</b><small>42 km in 7 days</small></li>
-          <li><span class="medal m-mint" aria-hidden="true">🌙</span><b>Early bird</b><small>7 nights before 23:30</small></li>
-          <li><span class="medal m-coral" aria-hidden="true">❤️</span><b>Calm heart</b><small>Resting HR record</small></li>
-          <li><span class="medal m-ghost" aria-hidden="true">⛰️</span><b>Summit</b><small>40 of 50 floors</small></li>
+        <ul class="medals" aria-label="Free badges">
+          <li><span class="medal m-mint" aria-hidden="true">🎯</span><b>First goal</b><small>Reach your daily step goal</small></li>
+          <li><span class="medal m-coral" aria-hidden="true">🔥</span><b>7-day streak</b><small>Your goal 7 days in a row</small></li>
+          <li><span class="medal m-gold" aria-hidden="true">💯</span><b>100K month</b><small>100,000 steps in a month</small></li>
         </ul>
+        <p class="fine">These three are free. Pro adds every other badge and your streak records.</p>
       </div>
       <div class="split-art">
         <figure class="shot">
-          <div class="phone"><img src="assets/badges-glass.webp" alt="Statly's Badges screen: a 12-day streak, recently earned medals Marathon week, Early bird and Calm heart, and progress toward Summit, 100K month and a 21-day streak." width="732" height="1640" loading="lazy"></div>
-          <figcaption>Badges, design</figcaption>
+          <div class="phone"><img src="assets/s-badges.webp" alt="A real screenshot of Statly's Badges screen: a 5-day streak, First goal earned, and 100K month and 7-day streak almost there." width="720" height="1433" loading="lazy"></div>
+          <figcaption>Real screenshot</figcaption>
         </figure>
       </div>
     </div>
@@ -141,22 +143,28 @@
   <!-- ============ WIDGETS ============ -->
   <section class="sec" id="widgets">
     <div class="wrap">
-      <div class="sec-head">
+      <div class="sec-head center">
         <p class="kicker">Home-screen widgets</p>
         <h2>Glance at your day<br><em>without opening anything.</em></h2>
-        <p class="body">Several sizes and styles for your home screen: steps and sleep together, your streak, resting heart, or the whole week of goals. They refresh in the background as your watch syncs.</p>
+        <p class="body">Glass widgets for your home screen: today's steps and last night's sleep together, your streak, or the whole week of goals. They keep themselves up to date.</p>
       </div>
-      <div class="widget-stage">
-        <div class="ws-grid">
-          <img class="wg wg-big" src="assets/w-big.webp" alt="Large widget: 7,820 steps, 7 hours 30 minutes last night, 55 bpm resting." width="660" height="320" loading="lazy">
-          <img class="wg wg-sq" src="assets/w-streak.webp" alt="Square widget: 12-day streak, best 21 days." width="314" height="314" loading="lazy">
-          <img class="wg wg-round" src="assets/w-heart.webp" alt="Round widget: resting heart 55 bpm." width="318" height="318" loading="lazy">
-          <img class="wg wg-wide" src="assets/w-week.webp" alt="Wide widget: this week, 5 of 7 goals hit." width="660" height="220" loading="lazy">
-        </div>
-        <figure class="shot ws-phone">
-          <div class="phone"><img src="assets/widgets.webp" alt="A home screen with Statly widgets for steps and sleep, streak, resting heart and the week." width="732" height="1640" loading="lazy"></div>
-          <figcaption>Widgets, design</figcaption>
+      <div class="ws-grid">
+        <figure class="wfig wf-big">
+          <img class="wg" src="assets/w-real.webp" alt="A real screenshot of Statly's Today widget on a home screen: 5,100 steps and 8 hours 5 minutes last night." width="660" height="329" loading="lazy">
+          <figcaption>Real screenshot</figcaption>
         </figure>
+        <figure class="wfig wf-sq">
+          <img class="wg wg-sq" src="assets/w-streak.webp" alt="Square streak widget: 12-day streak, best 21 days." width="314" height="314" loading="lazy">
+          <figcaption>Design</figcaption>
+        </figure>
+        <figure class="wfig wf-wide">
+          <img class="wg wg-wide" src="assets/w-week.webp" alt="Wide widget: this week, 5 of 7 goals hit." width="660" height="220" loading="lazy">
+          <figcaption>Design</figcaption>
+        </figure>
+        <div class="wf-note glass">
+          <b>Several sizes</b>
+          <small>Steps and sleep, streak, and this week. Basic widgets are free; Pro adds every style and size.</small>
+        </div>
       </div>
     </div>
   </section>
@@ -167,18 +175,44 @@
       <div class="split-copy">
         <p class="kicker">Trends</p>
         <h2>Week, month and year,<br><em>with your goal line.</em></h2>
-        <p class="body">See how this week compares to the last one, which days you hit your goal, and where your sleep and resting heart are heading. Plain charts, plain numbers.</p>
+        <p class="body">See which days you hit your goal, your best day, and how your estimated sleep is going. Plain charts, plain numbers.</p>
         <div class="stats">
-          <div class="stat glass"><small>Average</small><b>8,630</b><span>steps a day</span></div>
-          <div class="stat glass"><small>Avg sleep</small><b>7h 12m</b><span>↑ 18 min vs last week</span></div>
-          <div class="stat glass"><small>Goal hit</small><b>3 / 7</b><span>days this week</span></div>
+          <div class="stat glass"><small>Average</small><b>10,090</b><span>steps a day</span></div>
+          <div class="stat glass"><small>Best day</small><b>12,600</b><span>steps</span></div>
+          <div class="stat glass"><small>Avg sleep</small><b>7h 38m</b><span>estimated</span></div>
         </div>
-        <p class="fine">Free shows the last 7 days. Pro adds your full history and the year view.</p>
+        <p class="fine">Free shows the week. Month and Year come with Pro.</p>
       </div>
       <div class="split-art">
         <figure class="shot">
-          <div class="phone"><img src="assets/trends.webp" alt="Statly's Trends screen: daily steps for the week against a 10,000 goal line, average sleep 7 hours 12 minutes, resting heart 56 bpm." width="732" height="1640" loading="lazy"></div>
-          <figcaption>Trends, design</figcaption>
+          <div class="phone"><img src="assets/s-trends.webp" alt="A real screenshot of Statly's Trends screen: daily steps for the week against a 10,000 goal line, average 10,090, best day 12,600, goal hit 4 of 5, and average sleep 7 hours 38 minutes, estimated from the phone." width="720" height="1433" loading="lazy"></div>
+          <figcaption>Real screenshot</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WATCH (OPTIONAL) ============ -->
+  <section class="sec" id="watch">
+    <div class="wrap split split-rev">
+      <div class="split-copy">
+        <p class="kicker">Optional</p>
+        <h2>Have a watch?<br><em>Bring it along.</em></h2>
+        <p class="body">You don't need one. But if you already wear a watch or tracker, Statly can import its sleep stages, heart rate and workouts through Health Connect. Turn it on in Settings whenever you like.</p>
+        <ul class="ticks">
+          <li><b>Read-only.</b> Statly never writes to or changes anything in Health Connect.</li>
+          <li><b>No double counting.</b> On days your watch has steps, Statly uses its count instead of the phone's.</li>
+          <li><b>Easy to undo.</b> Turn the import off and Statly deletes its imported copy. Your phone keeps counting either way.</li>
+        </ul>
+      </div>
+      <div class="split-art duo">
+        <figure class="shot">
+          <div class="phone"><img src="assets/s-watch.webp" alt="A real screenshot of Statly's Settings: Import from your watch. Optional. Bring in sleep stages, heart rate and workouts through Health Connect. Your phone keeps counting either way." width="720" height="1267" loading="lazy"></div>
+          <figcaption>Real screenshot</figcaption>
+        </figure>
+        <figure class="shot shot-back">
+          <div class="phone"><img src="assets/s-today-watch.webp" alt="A real screenshot of Statly's Today screen with a watch imported: 7,100 steps, 8 hours 5 minutes of sleep, 10 active minutes including an evening run, 5.0 km and resting heart." width="720" height="1413" loading="lazy"></div>
+          <figcaption>Real screenshot</figcaption>
         </figure>
       </div>
     </div>
@@ -186,22 +220,22 @@
 
   <!-- ============ PRIVACY ============ -->
   <section class="sec" id="privacy">
-    <div class="wrap split split-rev">
+    <div class="wrap split">
       <div class="split-copy">
         <p class="kicker">Privacy</p>
-        <h2>Your health data<br><em>stays on your phone.</em></h2>
-        <p class="body">Statly reads from Health Connect, the place on Android where your tracker shares its data. You choose exactly what Statly may read, and you can change that any time.</p>
+        <h2>Counted and kept<br><em>on your phone.</em></h2>
+        <p class="body">Statly measures with the phone you already carry, and what it measures never leaves it. You can switch the permission off any time in Android's settings.</p>
         <ul class="privacy-grid">
-          <li class="glass"><span class="pi" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></svg></span><b>Stays on your phone</b><small>No server and no account. Your readings are never uploaded.</small></li>
-          <li class="glass"><span class="pi" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.5 12s3.5-6.5 9.5-6.5 9.5 6.5 9.5 6.5-3.5 6.5-9.5 6.5S2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></svg></span><b>Read-only</b><small>Statly only reads. It never writes to or changes your health data.</small></li>
+          <li class="glass"><span class="pi" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 18.5h3"/></svg></span><b>Stays on your phone</b><small>Your steps and sleep are never uploaded. No server holds them.</small></li>
+          <li class="glass"><span class="pi" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21c1-4 4-6 7.5-6s6.5 2 7.5 6"/></svg></span><b>No account</b><small>No sign-in, no email, no name. Open it and go.</small></li>
           <li class="glass"><span class="pi" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2.5l8 3v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10v-6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span><b>Never sold</b><small>Your data isn't sold, shared or used to profile you.</small></li>
           <li class="glass"><span class="pi" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg></span><b>No ads</b><small>Not now, not later. You pay for the app, so you aren't the product.</small></li>
         </ul>
-        <p class="fine">Details in the <a href="https://ahaariyan.github.io/staly_health_app_privacy_policy/">privacy policy</a>.</p>
+        <p class="fine">Anonymous usage stats and crash reports help fix bugs; they never include your health data, and you can turn them off in Settings. Details in the <a href="https://ahaariyan.github.io/staly_health_app_privacy_policy/">privacy policy</a>.</p>
       </div>
       <div class="split-art">
         <figure class="shot">
-          <div class="phone"><img src="assets/m1-welcome.webp" alt="A real screenshot of Statly's welcome screen: stays on your phone, works with your watch, you choose what to share, and a Connect health data button." width="720" height="1480" loading="lazy"></div>
+          <div class="phone"><img src="assets/s-permission.webp" alt="A real screenshot of Statly's permission screen: one permission, Physical activity. Your steps, your sleep estimated, only on this phone, never uploaded." width="720" height="1433" loading="lazy"></div>
           <figcaption>Real screenshot</figcaption>
         </figure>
       </div>
@@ -214,7 +248,7 @@
       <div class="sec-head center">
         <p class="kicker">Pricing</p>
         <h2>One fair price.<br><em>No weekly traps.</em></h2>
-        <p class="body">Free covers your Today screen, 7-day trends and basic widgets. Pro unlocks everything else. Pay once, or by the year or month; cancel in two taps.</p>
+        <p class="body">Free covers your Today screen, the week in Trends, three badges and basic widgets. Pro unlocks everything else. Pay once, or by the year or month; cancel in two taps.</p>
       </div>
       <div class="plans">
         <article class="plan glass">
@@ -237,13 +271,13 @@
       <div class="pro-list glass">
         <p><b>Every Pro plan includes</b></p>
         <ul>
-          <li>Full history and the year view</li>
+          <li>Full history, Month and Year</li>
           <li>Every badge and streak record</li>
           <li>All widget styles and sizes</li>
           <li>Export your data (CSV)</li>
         </ul>
       </div>
-      <p class="fine center">Prices in US dollars and subject to change before launch. The store shows the final price for your country.</p>
+      <p class="fine center">Prices in US dollars and subject to change. The store shows the final price for your country.</p>
     </div>
   </section>
 
@@ -257,28 +291,28 @@
       </div>
       <div class="faq">
         <details class="glass" open>
-          <summary>Does it work with my watch?</summary>
-          <p>Statly works with any watch, ring or tracker whose app shares data to Health Connect. Turn on sharing in your tracker's app once, then connect Statly. If your tracker doesn't share to Health Connect, Statly can't see its data.</p>
+          <summary>Do I need a watch?</summary>
+          <p>No. Statly counts your steps and estimates your sleep with your phone alone. If you already wear a watch or tracker, you can optionally import its sleep stages, heart rate and workouts through Health Connect, in Settings.</p>
         </details>
         <details class="glass">
           <summary>Which phones does it run on?</summary>
-          <p>Android 9 or newer. On Android 14 and later, Health Connect is built in. On Android 9 to 13 it's a free app you install once; Statly shows you how.</p>
+          <p>Android 9 or newer. Statly uses the phone's own motion sensor, so there's nothing else to install. It asks for one permission, which Android calls "Physical activity".</p>
+        </details>
+        <details class="glass">
+          <summary>How is sleep estimated?</summary>
+          <p>From how still your phone is at night, worked out on the phone itself. Statly shows when you went to bed, when you woke and how long you slept, and always marks it as an estimate. It works best if your phone stays near you overnight. It can't see sleep stages; for those, you can import sleep from a watch.</p>
         </details>
         <details class="glass">
           <summary>What happens to my data?</summary>
-          <p>It stays on your phone. Statly reads your steps, sleep, heart rate and exercise from Health Connect, shows them, and keeps what it needs for trends and badges on your device. There is no account and no Statly server holding your health data, and it is never sold. You can remove Statly's access in Health Connect at any time, and uninstalling removes what Statly kept. The <a href="https://ahaariyan.github.io/staly_health_app_privacy_policy/">privacy policy</a> has the details.</p>
-        </details>
-        <details class="glass">
-          <summary>Is there an AI coach?</summary>
-          <p>No, on purpose. Statly shows your numbers clearly and leaves the thinking to you.</p>
+          <p>It stays on your phone. Your steps, sleep estimates and anything you import are stored only on your device and are never uploaded, sold or used for ads. There is no account. Statly sends anonymous usage stats and crash reports that never include health data, and you can turn them off in Settings. Clearing the app's storage or uninstalling removes everything Statly kept. The <a href="https://ahaariyan.github.io/staly_health_app_privacy_policy/">privacy policy</a> has the details.</p>
         </details>
         <details class="glass">
           <summary>Is Statly a medical app?</summary>
-          <p>No. Statly displays the data your tracker records. It doesn't diagnose, treat or give medical advice, and its numbers are only as accurate as your tracker's. Talk to a doctor about anything that worries you.</p>
+          <p>No. Statly is for everyday motivation. It doesn't diagnose, treat or give medical advice, and its sleep, distance and calorie numbers are estimates. Talk to a doctor about anything that worries you.</p>
         </details>
         <details class="glass">
           <summary>When can I get it?</summary>
-          <p>Statly is in development and coming soon to Android. The screens marked "design" on this page show where it's heading; the ones marked "real screenshot" are from the current build.</p>
+          <p>Statly is in development and coming soon to Android. The screens marked "Real screenshot" on this page are from the current build; the two widgets marked "Design" show where it's heading.</p>
         </details>
       </div>
     </div>
@@ -289,8 +323,8 @@
     <div class="wrap">
       <div class="closing-card">
         <img src="assets/icon.webp" alt="" width="88" height="88" loading="lazy">
-        <h2>Your health, calm and clear.</h2>
-        <p>Steps, sleep and heart from your watch. Badges and streaks back. No AI coach, no account.</p>
+        <h2>Your steps, calm and clear.</h2>
+        <p>Steps, estimated sleep, streaks, badges and widgets, all from your phone. No watch, no other app, no account.</p>
         <!-- TODO(play-link): switches automatically once PLAY_URL is set in assets/play.js -->
         <a class="btn btn-dark btn-lg" data-play aria-disabled="true"><img src="assets/play-logo.png" alt="" width="18" height="20"><span data-play-label>Coming soon to Google Play</span></a>
       </div>
@@ -305,7 +339,7 @@
       <a href="https://ahaariyan.github.io/staly_health_app_privacy_policy/">Privacy policy</a>
       <a href="mailto:abdulhady.aariyan@gmail.com">abdulhady.aariyan@gmail.com</a>
     </nav>
-    <p class="fine">Statly is not a medical device. It shows the data your tracker records.</p>
+    <p class="fine">Statly is not a medical device. Sleep, distance and calories are estimates.</p>
   </div>
 </footer>
 </body>

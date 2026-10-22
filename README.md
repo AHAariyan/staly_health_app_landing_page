@@ -1,13 +1,13 @@
 # Statly landing page
 
-Static landing page for **Statly**, a calm, no-AI health dashboard for Android, served by GitHub Pages:
+Static landing page for **Statly**, a phone-first step counter with estimated sleep, streaks, badges and widgets for Android (no watch needed), served by GitHub Pages:
 **https://ahaariyan.github.io/staly_health_app_landing_page/** (repo `AHAariyan/staly_health_app_landing_page`).
 
 - `index.html`, `styles.css`: the whole page. No build step, no frameworks, no web fonts, no trackers. All paths are relative.
 - `assets/play.js`: the only script; it switches the Play buttons (see below).
-- `assets/`: screens cropped from the Glass mockups (`*-glass.webp`, `trends.webp`, `widgets.webp`, widget cut-outs `w-*.webp`),
-  real app screenshots (`m1-*.webp`), icons and favicons from the Calm stones icon, and `og-statly.jpg`
-  (1200x630 link preview; re-render it from `og-share.html`, the command is in that file).
+- `assets/`: real app screenshots from the emulator (`s-*.webp`, status bar kept, nav bar cropped), the real Today widget
+  (`w-real.webp`), two widget designs (`w-streak.webp`, `w-week.webp`, labelled "Design"), icons and favicons from the
+  Calm stones icon, and `og-statly.jpg` (1200x630 link preview; re-render it from `og-share.html`, the command is in that file).
 - `docs/`: full-page renders at 1440 px (desktop) and 390 px (mobile).
 - Privacy policy: https://ahaariyan.github.io/staly_health_app_privacy_policy/
 
@@ -25,7 +25,9 @@ and any `utm_*` tags on the page URL are passed to Play's `referrer`. To do it w
 
 ## Copy rules
 
+- Phone-first: Statly works with the phone alone. A watch is only ever an optional extra ("Have a watch? Bring it along").
 - Never name a brand (watch makers, fitness apps, phone makers). Say "your watch" or "your tracker".
   Health Connect may be named. "Google Play" appears only on the store buttons.
-- No medical claims. Honest only: design mockups are labelled "design", real screenshots "Real screenshot".
+- No medical claims. Sleep, distance and calories are always called estimates.
+- Honest only: designs are labelled "Design", real screenshots "Real screenshot".
 - Prices are marked as subject to change until launch.
